@@ -417,6 +417,8 @@ class LineChartPainter extends AxisChartPainter<LineChartData> {
         }
       }
 
+      lineEnd = Offset(touchedSpot.dx, 0);
+
       _touchLinePaint
         ..color = indicatorData.indicatorBelowLine.color
         ..strokeWidth = indicatorData.indicatorBelowLine.strokeWidth
